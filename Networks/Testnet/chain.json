@@ -1,0 +1,120 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "highbury",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://fury.fury/",
+  "update_link": "https://raw.githubusercontent.com/merlin-network/fury-fury/fury/chain.schema.json",
+  "pretty_name": "Furyfury",
+  "chain_id": "highbury_710-1",
+  "bech32_prefix": "fury",
+  "daemon_name": "fury",
+  "node_home": "$HOME/.fury",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "afury",
+        "fixed_min_gas_price": 0.0025,
+        "low_gas_price": 0.0025,
+        "average_gas_price": 0.025,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "afury"
+      }
+    ],
+    "lock_duration": {
+      "time": "1209600s"
+    }
+  },
+  "codebase": {
+    "git_repo": "https://github.com/merlin-network/fury-fury",
+    "recommended_version": "v3.1.0",
+    "compatible_versions": [
+      "v3.1.0"
+    ],
+    "cfurys_sdk_version": "0.45",
+    "consensus": {
+      "type": "tendermint",
+      "version": "0.34"
+    },
+    "cosmwasm_version": "0.30",
+    "cosmwasm_enabled": true,
+    "ibc_go_version": "4.3.0",
+    "ics_enabled": [
+      "ics20-1"
+    ],
+    "genesis": {
+      "name": "v3",
+      "genesis_url": "https://github.com/merlin-network/networks/raw/fury/highbury_710-1/genesis.json"
+    },
+    "versions": [
+      {
+        "name": "v3",
+        "tag": "v3.1.0",
+        "height": 0,
+        "next_version_name": "v4"
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/merlin-network/chain-registry/fury/fury-fury/images/furyfury-chain-logo.png",
+      "theme": {
+        "primary_color_hex": "#231D4B"
+      }
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/merlin-network/chain-registry/fury/fury-fury/images/furyfury-chain-logo.png",
+    "svg": "https://raw.githubusercontent.com/merlin-network/chain-registry/fury/fury-fury/images/fury.svg"
+  },
+  "peers": {
+    "seeds": [
+      {
+        "id": "26a8edbda7c41ac02dae05f10a8b9a90d82bb2f4",
+        "address": "34.124.240.49:26656",
+        "provider": "Fanfury"
+      }
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.fury.fury/",
+        "provider": "Furyfury Foundation"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://api.fury.fury/",
+        "provider": "Furyfury Foundation"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "https://gridiron.fury.fury",
+        "provider": "Furyfury Foundation 🐝"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "EZ Staking Tools",
+      "url": "https://ezstaking.tools/furyfury",
+      "tx_page": "https://ezstaking.tools/furyfury/txs/${txHash}",
+      "account_page": "https://ezstaking.tools/furyfury/account/${accountAddress}"
+    }
+  ],
+  "keywords": [
+    "sports"
+  ]
+}
